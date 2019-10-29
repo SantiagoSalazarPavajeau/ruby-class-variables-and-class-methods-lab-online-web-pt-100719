@@ -12,5 +12,7 @@ class Song
     @@genres << genre #self.genre unless @@genres.include?(self.genre)
     @@artists << artist
   end
+  
+  
 
 end
