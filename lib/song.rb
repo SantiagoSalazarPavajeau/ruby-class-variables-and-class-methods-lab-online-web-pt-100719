@@ -13,6 +13,6 @@ class Song
     @@artists << artist
   end
   
-  
+  def self.count
 
 end
