@@ -30,5 +30,11 @@ class Song
     @@genres.each { | v | h.store(v, h[v]+1) }
     h
   end
+  
+  def self.artist_count
+    h = Hash.new(0)
+    @@artists.each { | v | h.store(v, h[v]+1) }
+    h
+  end
 
 end
