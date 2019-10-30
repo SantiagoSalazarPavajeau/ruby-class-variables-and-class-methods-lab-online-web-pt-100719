@@ -26,15 +26,15 @@ class Song
   end
   
   def self.genre_count
-    h = Hash.new(0)
-    @@genres.each { | v | h.store(v, h[v]+1) }
-    h
+    hash = Hash.new(0)
+    @@genres.each { | genre | hash.store(genre, hash[genre]+1) }
+    hash
   end
   
   def self.artist_count
-    h = Hash.new(0)
-    @@artists.each { | v | h.store(v, h[v]+1) }
-    h
+    hash = Hash.new(0)
+    @@artists.each { | artist | hash.store(artist, hash[artist]+1) }
+    hash
   end
 
 end
